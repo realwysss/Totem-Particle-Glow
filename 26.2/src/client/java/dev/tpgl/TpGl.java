@@ -12,7 +12,7 @@ public class TpGl implements ClientModInitializer {
 		Cfg.ld();
 		KeyMapping k = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.totemparticleglow.open", InputConstants.KEY_Y, KeyMapping.Category.register(Identifier.fromNamespaceAndPath("totemparticleglow", "main"))));
 		ClientTickEvents.END_CLIENT_TICK.register(m -> {
-			while (k.consumeClick()) if (m.gui.screen() == null) m.gui.setScreen(CfgScr.mk(null));
+			while (k.consumeClick()) if (m.gui.screen() == null) m.gui.setScreen(new dev.tpgl.ui.Panel(null));
 		});
 	}
 }
