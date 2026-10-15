@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "totemparticleglow",
+	"version": "${version}",
+	"name": "Totem Particle Glow",
+	"description": "the particles of a popping totem glow with a cheap shader glow. color, size, strength, effects and range in the settings (key Y).",
+	"authors": ["wysss"],
+	"contact": {"sources": "https://github.com/realwysss/Totem-Particle-Glow"},
+	"license": "All-Rights-Reserved",
+	"icon": "assets/totemparticleglow/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.tpgl.TpGl"],
+		"modmenu": ["dev.tpgl.ModmenuIntgr"]
+	},
+	"mixins": [
+		{
+			"config": "totemparticleglow.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"suggests": {
+		"modmenu": "*"
+	},
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"cloth-config": "*",
+		"minecraft": ">=1.21.11 <1.22",
+		"java": ">=21"
+	}
+}
