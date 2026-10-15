@@ -8,9 +8,11 @@ import net.minecraft.client.KeyMapping;
 import net.minecraft.resources.Identifier;
 
 public class TpGl implements ClientModInitializer {
+	public static KeyMapping key;
+
 	public void onInitializeClient() {
 		Cfg.ld();
-		KeyMapping k = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.totemparticleglow.open", InputConstants.KEY_Y, KeyMapping.Category.register(Identifier.fromNamespaceAndPath("totemparticleglow", "main"))));
+		KeyMapping k = key = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.totemparticleglow.open", InputConstants.KEY_Y, KeyMapping.Category.register(Identifier.fromNamespaceAndPath("totemparticleglow", "main"))));
 		ClientTickEvents.END_CLIENT_TICK.register(m -> {
 			while (k.consumeClick()) if (m.screen == null) m.setScreen(new dev.tpgl.ui.Panel(null));
 		});

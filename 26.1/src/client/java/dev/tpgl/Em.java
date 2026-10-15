@@ -16,7 +16,7 @@ public class Em {
 			PtAcc a = (PtAcc) p;
 			QdAcc q = (QdAcc) p;
 			double x = Mth.lerp(Gk.pt, a.xo(), a.x()), y = Mth.lerp(Gk.pt, a.yo(), a.y()), z = Mth.lerp(Gk.pt, a.zo(), a.z());
-			int col = Cfg.c.pc ? (int) (Math.min(1f, q.r()) * 255) << 16 | (int) (Math.min(1f, q.g()) * 255) << 8 | (int) (Math.min(1f, q.b()) * 255) : Cfg.c.col;
+			int col = Cfg.c.pc ? (int) (Math.min(1f, q.r()) * 255) << 16 | (int) (Math.min(1f, q.g()) * 255) << 8 | (int) (Math.min(1f, q.b()) * 255) : Gk.cur.col;
 			Gk.add(x, y, z, 0.7f, col, Math.max(0f, q.al()), System.identityHashCode(p));
 		}
 	}
