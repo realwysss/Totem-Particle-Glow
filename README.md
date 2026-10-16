@@ -4,7 +4,7 @@
 
 the particles of a popping totem glow with a cheap shader glow. every particle shines in its own color, or in the color you pick.
 
-client side fabric mod for 1.21.11, 26.1 and 26.2. press **Y** to open the settings (press it again to close, rebind it in Controls), or use Mod Menu. the settings menu is built into the mod, it only needs fabric api. color picker with hex field, a live preview, sliders and switches.
+client side fabric mod for 1.21.11, 26.1 and 26.2. press **Y** to open the settings (press it again to close, rebind it in Controls), or use Mod Menu. the settings menu needs [Wysss Library](https://github.com/realwysss/Wysss-Library) to open (fabric api and Wysss Library). color picker with hex field, a live preview, sliders and switches.
 
 - **particle colors**: every particle glows in its own color
 - **color**: any color
@@ -19,9 +19,9 @@ client side fabric mod for 1.21.11, 26.1 and 26.2. press **Y** to open the setti
 
 | jar | minecraft |
 |---|---|
-| `totem-particle-glow-mc1.21.11-1.1.0.jar` | 1.21.11 |
-| `totem-particle-glow-mc26.1-1.1.0.jar` | 26.1 |
-| `totem-particle-glow-mc26.2-1.1.0.jar` | 26.2 |
+| `totem-particle-glow-mc1.21.11-1.2.0.jar` | 1.21.11 |
+| `totem-particle-glow-mc26.1-1.2.0.jar` | 26.1 |
+| `totem-particle-glow-mc26.2-1.2.0.jar` | 26.2 |
 
 on the releases page. fabric loader 0.16 or newer, fabric api.
 
